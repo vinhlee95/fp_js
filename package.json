@@ -1,0 +1,14 @@
+{
+  "name": "just_enough_fp_js",
+  "version": "1.0.0",
+  "description": "A repo to learn Functional Programming in JS",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Vinh Le (lethanhvinh95@gmail.com)",
+  "license": "ISC",
+  "dependencies": {
+    "node-fetch": "^2.6.1"
+  }
+}
