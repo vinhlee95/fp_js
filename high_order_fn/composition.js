@@ -17,8 +17,10 @@ const grades = [
     {name: 'Jane', grade: 9, sex: 'F'}
 ]
 
+const map = (fn) => (mappable) => mappable.map(fn)
 const calculateTotal = (arr) => arr.reduce((a, b) => a + b, 0)
-const mapToGrade = (arr) => arr.map(item => item.grade)
+const toGrade = (item) => item.grade
+const mapToGrade = map(toGrade)
 
 const calculateAverage = (arr, action) => {
     const arrToCalculate = action && typeof action === 'function' ? arr.filter(action) : arr
